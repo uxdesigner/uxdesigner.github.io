@@ -39,7 +39,10 @@ function setSearchResults(result, metadata) {
 </script>
 
 <!-- need to be logged in to use Search; if not, offer a login button -->
-<script type="IN/Login"></script>
+<script type="IN/Login">
+  Hello, <?js= firstName ?> <?js= lastName ?>.
+</script>
+
 <p>Basic test of the People Search API via Connect. <br />
 You must click the button (pressing Enter doesn't work).</p>
 <form name="searchform" onsubmit="return false;">
@@ -53,6 +56,3 @@ You must click the button (pressing Enter doesn't work).</p>
 
 <p>This is a simple login button. When the user has logged in, the code inside of the script will be run.</p>
 
-<script type="IN/Login">
-  Hello, <?js= firstName ?> <?js= lastName ?>.
-</script>
